@@ -29,9 +29,14 @@ context.executeQueryAsync(
       //Success
 
       var n = jur_custom_field.get_name();
-      console.log(n + ': ');
-      console.log('--------------------------');
+      
       var lookupEnumerator = project_lookup_table_entries.getEnumerator();
+
+      var lastEntryIndex = project_lookup_table_entries.get_count(); //Total number of entries: https://msdn.microsoft.com/EN-US/library/ee542942.aspx
+
+      console.log(n + '(всего: ' + lastEntryIndex + '): ');
+      console.log('--------------------------');
+
       while (lookupEnumerator.moveNext())
             {
                 var entry = lookupEnumerator.get_current();
