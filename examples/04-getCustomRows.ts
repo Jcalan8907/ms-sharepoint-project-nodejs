@@ -40,7 +40,7 @@ interface ILookupEntry {
 
   console.log('=== Custom field: ===');
   console.log(jurCustomField.get_name() + '\n');
-  console.log('=== Lookup field entries: ===');
+  console.log(`=== Lookup field entries (${projectLookupTableEntries.get_count()}): ===`);
 
   console.log(lookupEnties);
 
