@@ -21,7 +21,9 @@ npm run config
 ```
 
 Provide [connection parameters](https://github.com/s-KaiNet/node-sp-auth/wiki).
+
 All the parameters are requested in interactive wizard-like approach and stored in `./config/private.json`.
+
 It's a best practice to exclude files with creadentials from source control.
 
 ## Execute an example script
